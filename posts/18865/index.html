@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>谈谈买菜这件小事 | Sakura</title><meta name="description" content="谈谈买菜这件小事"><meta name="keywords" content="买菜,外卖"><meta name="author" content="Sakura,nianshaoke@126.com"><meta name="copyright" content="Sakura"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="谈谈买菜这件小事"><meta name="twitter:description" content="谈谈买菜这件小事"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/huluobo.jpg"><meta property="og:type" content="article"><meta property="og:title" content="谈谈买菜这件小事"><meta property="og:url" content="https://nianshaoke.cn/posts/18865/"><meta property="og:site_name" content="Sakura"><meta property="og:description" content="谈谈买菜这件小事"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/huluobo.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = '1'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="canonical" href="https://nianshaoke.cn/posts/18865/"><link rel="prev" title="韩国电影人奉俊昊" href="https://nianshaoke.cn/posts/60076/"><link rel="next" title="谈谈余华的三本书" href="https://nianshaoke.cn/posts/60887/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://xxx/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"title":"Snackbar.bookmark.title","message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#2d3035","position":"bottom-left"},
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Sakura" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Sakura</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 娱乐</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 读书</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">13</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">13</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">7</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-heartbeat" aria-hidden="true"></i><span> 娱乐</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fa fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Gallery/"><i class="fa-fw fa fa-picture-o"></i><span> 照片</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li><li><a class="site-page" href="/books/"><i class="fa-fw fa fa-book"></i><span> 读书</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-user"></i><span> 关于</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#订单爆发，到家盛宴"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">订单爆发，到家盛宴</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#运力紧缺背后"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">运力紧缺背后</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#供应链，还是供应链"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">供应链，还是供应链</span></a></li></ol></div></div></div><div id="body-wrap"><!-- fas.fa-angle-double-right | fa.fa-arrow-right--><i class="fas fa-angle-double-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#订单爆发，到家盛宴"><span class="toc-number">1.</span> <span class="toc-text">订单爆发，到家盛宴</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运力紧缺背后"><span class="toc-number">2.</span> <span class="toc-text">运力紧缺背后</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#供应链，还是供应链"><span class="toc-number">3.</span> <span class="toc-text">供应链，还是供应链</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/huluobo.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">谈谈买菜这件小事</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-02-08<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2020-02-08</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%88%86%E6%9E%90/">分析</a></span><div class="post-meta-wordcount"><i class="fa fa-file-word-o post-meta__icon fa-fw" aria-hidden="true"></i><span>字数总计:</span><span class="word-count">3.4k</span><span class="post-meta__separator">|</span><i class="fa fa-clock-o post-meta__icon fa-fw" aria-hidden="true"></i><span>阅读时长: 9 分钟</span><div class="post-meta-pv-cv"><span class="post-meta__separator">|</span><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner"><article id="post"><div class="article-container" id="post-content"><script src="\assets\js\APlayer.min.js"> </script><p>就在几天之前，朋友们往往还会发出这样的感慨：</p>
+<blockquote>
+<p>“大白菜一颗要几十块钱了。”</p>
+<p>“想要买到就只有一早起来和大爷大妈去抢。”</p>
+<p>“线上能点但是送的太慢了。”</p>
+</blockquote>
+<p><strong>出于特殊时期的安全考虑，人们减少了出门活动的频次，这一度引发了囤货狂潮。</strong></p>
+<p>同时，线上和到家模式似乎也成了抗疫中的“赢家”：不敢出门而一口气下载了多个生鲜电商软件的人不在少数，此时虽众生苦，对企业来说却是培养用户心智的机会。</p>
+<p><code>外界认为，这次疫情或许会生鲜商品的让到家模式再迎来一次爆发期。</code></p>
+<h2 id="订单爆发，到家盛宴"><a href="#订单爆发，到家盛宴" class="headerlink" title="订单爆发，到家盛宴"></a>订单爆发，到家盛宴</h2><p><strong>当多数人意识到不能再经常出门的时候，第一反应就是囤货，于是多地都出现了超市被抢购一空的现象，平时不常做饭的人也开始往家里搬米面粮油，超市的新鲜瓜果蔬菜的货架常常变空。零售商们的销量相比以往都翻了几倍不止。</strong></p>
+<p>根据沃尔玛提供的其全渠道数据，仅春节前一周至1月底，其蔬菜供应已过万吨，米面油供应近3万吨，肉类供应超2000吨。仅春节前后两周时间，冷冻水饺、包点、汤圆都出现过需求激增的现象，同比增长甚至高达1.5倍。</p>
+<p>就在零售供应端的实力被证明的同时，线上生鲜到家模式也迎来了爆发。</p>
+<p>这里说的到家模式，是指伴随新零售起来的以即时配送为特征的外送服务，即用外卖的形式来送菜上门。目前的到家阵营可以分为几种不同的力量，一种是第三方平台来帮助超市做到家配送，一种是自己做配送的，这又分为两种：是有门店的和有仓的，比如前置仓。</p>
+<p>目前，做超市配送最主要的平台是京东到家。其提供的数据显示，从除夕至大年初九，全平台成交额同比去年增长约374%，其中粮油副食商品成交额同比增长了736.40%，肉品同比增长了711.11%，休闲食品增长了527.16%，蔬菜增长了441.1%，水果增长了378.8%。</p>
+<p>代表前置仓阵营的每日优鲜提供数据显示，除夕至初四，平台实收交易额较去年同期增长321%。其华北区域的订单量增幅为去年同期的136%，初一当天订单量较去年涨幅增加227%，其中水果和蔬菜的预计到货量为原来计划的3倍左右。</p>
+<p><strong>此外还有一类企业就是超市自身做配送到家业务，代表企业是盒马鲜生等。侯毅在私下交流时曾经对同行表示，由于订单增长迅猛，现在新零售企业“相当于天天都在过双十一”。</strong></p>
+<p>春节期间订单量已经增长了三倍多的家乐福到家（和美团、饿了么等外卖平台合作），也在几日前在苏宁易购APP上线了“家乐福1小时达”。同时，应对可能出现的订单增长，还调集了苏宁集团各产业抽调千余人增援门店的到家业务的拣货配送环节。</p>
+<p>一位知情人士指出：</p>
+<blockquote>
+<p>“永辉、每日优鲜、盒马订单都增长得比较多。从前置仓的情况来看，一是订单量有增长；二是总体新用户有增长，包括新客有不少老年人；三是客单价又涨了不少。”</p>
+</blockquote>
+<p>在每日优鲜的反馈中，目前订单的客单价平均可以达到100元。</p>
+<h2 id="运力紧缺背后"><a href="#运力紧缺背后" class="headerlink" title="运力紧缺背后"></a>运力紧缺背后</h2><p>从消费需求端来看，虽然商家一再强调备货充足，但是消费者囤货的势头不减。</p>
+<p>抗疫期间，大着胆子出门的人会尽量一次性买够多天的食材所需，不出门的人则多靠着线上到家软件续命。</p>
+<p>我收集了一些来自身边用户体验。2月6日，一位坐标杭州的同事早上6：45在叮咚买菜下单买食材，不过到晚上还是未配送，仍然在分拣中。在盒马鲜生的页面上，附件小区也显示为不能配送状态，须到门店下单。</p>
+<center>    <a href="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/dingdongmaicai.jpg" target="_blank" rel="noopener external nofollow noreferrer" data-fancybox="group" data-caption="undefined" class="fancybox"><img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" data-src="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/dingdongmaicai.jpg" src="/img/loading.gif" class="lazyload"></a>    <br>    <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">叮咚买菜</div> </center><br>​<br><br>以商品经营为主的超市零售和即时配送到家本就是两个世界，分属于零售和物流两个领域，但既要能卖货，又要能送货，成为消费者对当下商家提出的更高要求。<br><br>在不哄抢、不囤货的情况下，日常消费品和生鲜蔬果的供应本不成问题。<strong>“不缺货，但缺人”，这成了这段时间摆在零售企业的难题。</strong><br><br>逢年过节，线上购物软件爆仓、配送员无法及时到达的现象时有发生，这就像早些年的双十一，需要不断的磨合物流和运力问题。春节假期加上疫情爆发，配送员运力本就不足的同时，还有很多人无法及时返岗，一时间运力就成了一个大问题。<br><br>最近，<strong>盒马广泛接受餐饮企业员工成为话题，其中之一的考虑就包括对运力的补充。</strong>侯毅表示，“很多地方都是秒杀，远远超出我们的能力，而且由于疫情封闭，很多员工回不来。虽然一天将近100万单的配送，但是远远不能满足市场需求。”不过他强调，盒马坚持不涨价，有些是零毛利、负毛利，对社会稳定物价起了很大作用。<br><br>每日优鲜的1小时达也在春节期间更改为2小时。有身边的用户反馈，除夕之后的几天，每日优鲜上的新鲜蔬菜、鸡蛋等食材很快就会被抢光，但近几日的补充看起来快了很多。尝试于凌晨预约的订单，也都会于早间9～11点送到小区门口。据悉，<strong>这段时间每日优鲜实际平均一单配送时长为70～80分钟。</strong><br><br><br><br><center>    <a href="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/meiriyouxian.png
+" data-fancybox="group" data-caption="undefined" class="fancybox"><img style="border-radius: 0.3125em;    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" data-src="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/meiriyouxian.png
+" src="/img/loading.gif" class="lazyload"></a>    <br>    <div style="color:orange; border-bottom: 1px solid #d9d9d9;    display: inline-block;    color: #999;    padding: 2px;">每日优鲜</div> </center>
+
+<p>​    </p>
+<p>与配送地址相隔一公里多的永辉买菜，经测试时效为四个多小时，不着急的话，尚在可接受的范围内。</p>
+<p>根据身边这些少量的体验反馈来看，每日优鲜、美团等拥有自配送能力的线上平台运力较为充足，使用第三方平台的商超的履约能力略有滞后（不具有代表性，以实际体验为准）。</p>
+<p>正在通过大数据指导物美保证选品、库存的多点Dmall就坦言，受到春节和疫情双重影响，门店拣货、配送人手还在恢复过程中，而消费者在特殊时期到家订单需求又成上涨趋势，因此门店目前的履约压力其实较大。    </p>
+<p>不过，配送的时效虽然低于了预期，但此刻人们其实有了比以往更多的包容。</p>
+<p><strong>平日里对订单迟到10分钟的怒意都已消失，平台和用户之间多的是共克时艰的默契配合。</strong>另外，相对于速度，人们开始更看重是否安全、卫生。</p>
+<blockquote>
+<p>“我觉得这些平台都没有那么受那么大的影响，但可能就是选择上会有限制。从速度上看，这些企业就还蛮厉害的。”有用户如此评价道。</p>
+</blockquote>
+<p>当然，伴随着企业的应对措施，运力正在渐渐恢复。</p>
+<p>多点Dmall正在联合合作商家全力供应，在运力有限的情况下，利用现有供应链资源开辟一条新的配送通道，从工厂作业，次日免费配送到家，以满足更多到家订单。同时紧急调配资源，制定配送调整及复工方案，以保证物美超市门店尽快恢复当日送达标准，且每天提供两个送货时段；另外，建议尽早下单或是门店自提。</p>
+<p>一度暂停了线上配送的沃尔玛表示已积极增加店内配货及达达送货到家的人手，目前的到家业务（含沃尔玛小程序、沃尔玛京东到家）中，全国除湖北外已经陆续恢复运营，湖北省内沃尔玛也将于2月6日恢复部分门店的到家线上运营。</p>
+<p>在保证零售链条上所有参与人员安全的条件下，线下的供应和线上的配送都会逐渐恢复。面对这场大考，零售界或能交出一份漂亮的答卷。</p>
+<h2 id="供应链，还是供应链"><a href="#供应链，还是供应链" class="headerlink" title="供应链，还是供应链"></a>供应链，还是供应链</h2><p>对于目前流行的凌晨下单“抢菜”，早上提货的做法，每日优鲜CFO王珺表示，<code>这不应是常态，预售制也不是合适的生鲜履约方式。</code></p>
+<p>“90%订单我们还能做到2小时配送，这是前置仓的核心优势”。关键问题还是加强供给端的供应链能力。</p>
+<p>目前，每日优鲜已经把蔬菜每日的供应量提升到1000吨（疫情之前是大约500吨）。未来会继续提升供应链能力，预计可以提升到1500吨以上。</p>
+<p>面对这场到家的盛宴，过去以线下为主的超市零售企业也行动起来了。在这场和疫情赛跑的零售之战中，线上和线下发挥着前所未有的通力，置身其中的线上线下商家们，谁能在这场抗议战争中提供更好的服务，才能获得更多的消费者心智，成为疫情之后真正能站住脚的那一个。</p>
+<p><strong>而这一切的背后，其实是一场大型的供应链比拼，</strong>各家企业都使出浑身解数。</p>
+<p>物美集团创始人、多点Dmall董事长张文中几日前就建议市民不必担心民生商品短缺，他表示为保供应，物美节前就把储备库存全部发到门店，同时与产区实时对接。据了解，在物美联想桥店，蔬菜每两小时就要上一次货，门店一天卖出蔬菜6000公斤，比平时多了一倍。</p>
+<p>1月29日，张文中还宣布物美设立了三亿元平物价保供应专项基金，这一应急保障基金专项用于额外加大投入、平抑民生商品价格上涨，还有国内外的采购紧缺物资。比如为锁定货源保证供给和价格，物美用此项资金向农户提前支付5000万元，这笔基金还曾紧急支付1.03亿元到中国银行首尔支行，用于购买高标准防疫口罩等防疫用品。</p>
+<p>另一家商超巨头永辉给出的答案则更多在细节上。</p>
+<blockquote>
+<p><a href="https://www.huxiu.com/article/337871.html" target="_blank" rel="noopener external nofollow noreferrer">永辉超市总裁李国</a>介绍：其这段时间在供应端的做法是与上游供应链加强协同，共同制定配送计划，启动“田间寻货源”“田间现采”的方案，加强对民生商品库存量的实时监控，及时与采购信息共享，确保各区各中心保供商品库存充足。</p>
+</blockquote>
+<p>永辉还及时叫停了物流配送员工的春节休假，启动车辆接力接送，对无法返回租住地的员工统一安排，并保证补助。在物流配送资源调配上，物流中心启动资源共享计划、对于食百、生鲜中心采取综合排班，充分利用两仓之间的高低峰期作业差异，人员、设备、车辆等运营资源共享，共同完成配送任务完成。</p>
+<p>沃尔玛则是采购部、补货团队、供应链和门店的员工全部参与跨部门协同：进行系统设置、与供应商沟通、配送中心货量预测和作业沟通、各品类补货回顾订量、门店实时反馈销售情况……疫情突发的前10天，加上假期的原因，虽上游供应紧缺，但门店有货率能保持在96%以上，并将蔬菜肉等商品的供应量提高了50%。</p>
+<p><strong>结合从实际体验来看，显然还是超市门店的货品更为充足，虽然没有了配送到家的方便，但是却能满足消费者批量采购、一次购足这一最基础的需求。</strong></p>
+<p>另外，虽然几大到家平台在为超市做第三方配送，但事实上，平日里大型商超数量庞大的SKU很难全部在线化，这太过于考验门店的商品掉配能力、拣货难度与部分前置仓的容纳量，尤其这样特殊时期，其线下的商品会更谨慎、更少的放到线上。所以，第三方配送平台也并不能体现出线下门店的品类结构优势。</p>
+<p>显然，在这场战疫中，<strong>传统商超在供应链能力优势发挥得更为充分，只是当大家转身到线上时，尤其遇到这样的紧急情况时，它们更需要补上“到家”这一课。</strong></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:nianshaoke@126.com" rel="external nofollow noreferrer">Sakura</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://nianshaoke.cn/posts/18865/">https://nianshaoke.cn/posts/18865/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener external nofollow noreferrer">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://nianshaoke.cn">Sakura</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E4%B9%B0%E8%8F%9C/">买菜    </a><a class="post-meta__tags" href="/tags/%E5%A4%96%E5%8D%96/">外卖    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/huluobo.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="divider divider-horizontal divider-with-text-center" role="separator"><span class="divider-inner-text">本文结束</span></div><div class="post-reward"><a class="reward-button button--primary button--animated"> <i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/wechat.jpg" alt="微信"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lazyload post-qr-code__img" src="/img/alipay.jpg" alt="支付宝"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/posts/60076/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/nianshaoke-PIC/jishengchong.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>韩国电影人奉俊昊</span></div></a></div><div class="next-post pull_right"><a href="/posts/60887/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/nianshaoke/tuchuang/yuhua.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>谈谈余华的三本书</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'6K21KW3hME8Frz2wBYiSAgEI-MdYXbMMI',
+  appKey:'vqFRKw5KhygME0Rdhuf2c7jM',
+  placeholder:'你是我一生只会遇见一次的惊喜...',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" style="background-image: url(/images/footer.svg)" data-type="photo"><div id="footer-wrap"><div class="copyright">Copyright &copy; 2019 - 2020 Sakura. All Rights Reserved.</div><div class="footer-slogan"><a href="/about/"><span>Sakura</span></a><i class="fa fa-heart" aria-hidden="true"></i><span id="sp-slogan">最好了。</span></div><div class="framework-info"><a href="http://hexo.io" target="_blank" rel="noopener external nofollow noreferrer"><span>Hexo</span></a><span> 驱动</span><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener external nofollow noreferrer"><span>Butterfly</span></a></div><div class="badge"><a href="https://996.icu" target="_blank" rel="noopener external nofollow noreferrer"><img class="icp-icon" src="https://img.shields.io/badge/link-996.icu-red.svg"></a><a href="https://opensource.org/about" target="_blank" rel="noopener external nofollow noreferrer"><img class="icp-icon" src="https://img.shields.io/badge/Support-Open%20Source-brightgreen"></a></div></div><script src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script><script id="myhk" src="https://player.lmih.cn/player/js/player.js" key="158070164740" m="1"></script></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" rel="external nofollow noreferrer" title="简繁转换" target="_self">简</a><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="https://cdn.jsdelivr.net/npm/activate-power-mode/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false; 
+document.body.addEventListener('input', POWERMODE);
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener external nofollow noreferrer" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
